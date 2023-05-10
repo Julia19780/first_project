@@ -1,0 +1,342 @@
+.body{
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+
+    line-height: 1.6;
+    background: #FFFFFF;
+    color: #000000;
+}
+* {
+    margin: 0;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+} 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0; 
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    position: absolute;
+    max-height: 46px;
+    max-width: 1200px; /*КАК ЗДЕСЬ ОСТАВИТЬ??? */
+    margin: auto;
+    top: 36px;
+    left: 117px;
+    right: 120px;
+    z-index: 1000;
+}
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* Logo in header */
+#header_logo{
+    height: 35px;
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo_text{
+    font-family: 'Cedarville Cursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+}
+/* Nav */
+nav{
+    font-size: 16px;
+}
+.nav_link{
+    font-weight: 700;
+    line-height: 16px;
+    text-decoration: none;
+    color: #000000;
+
+    margin: 0 30px;
+
+    transition: color .1s linear;
+}
+.nav_link:hover{
+    color:   #2D635E;
+    text-decoration: underline;
+}
+/* Button */
+.button {
+    background-color: #2D635E;
+    color:  #FFFFFF;
+    text-decoration: none;
+    padding: 14px 33px;
+    font-weight: 700;
+    text-align: center;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    transition: background-color .1s linear;
+}
+
+.button:hover {
+    background-color:  #FFFFFF;
+    color:  #2D635E;
+    border: 1px solid #2D635E;
+}
+
+/* Intro */
+.intro{
+    z-index: 500;
+    width: 100%;
+    height: 100vh;
+}
+.intro_inner{
+    width: 100%;
+    max-width: 515px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-top: 235px;
+    
+}
+.intro_suptitle{
+    font-family: 'Cedarville Cursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 53px;
+    color: #444A4A;
+}
+.intro_title{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 63px;
+    line-height: 63px;
+    line-height: 2;
+}
+.btn{
+    background-color: #2D635E;
+    color:  #FFFFFF;
+    font-family: 'Syne';
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    
+    height: 54px;
+    width: 235px;
+    
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: background-color .1s linear;
+}
+
+.btn:hover {
+    background-color:  #FFFFFF;
+    color:  #2D635E;
+    border: 1px solid #2D635E;
+}
+/* Block */
+.block{
+    display: flex;
+    float: right;
+    position: relative;
+    margin-right: 92px;
+    margin-top: 129px;
+    width: 410px;
+    height: 466px;
+    background: #E3EBE7;
+    z-index: 3;
+}
+/* Rectangle 73 */
+.square{
+    display: flex;
+    float: left;
+    position: relative;
+    width: 159px;
+    height: 157px;
+    left: 50px;
+    top: 445px;
+    z-index: 1;
+
+    background: #E3EBE7;
+    opacity: 0.4;
+}
+.arrow{
+    position: absolute;
+    width: 25px;
+    height: 6px;
+    left: 38px;
+    top: 66px;
+    z-index: 2;
+}
+.coffee{
+    position: absolute;
+    left: 39px;
+    top: 140px; 
+}
+.name_coffee{
+    font-family: 'Cedarville Cursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+
+    position: absolute;
+    left: 140px;
+    top: 330px;
+
+    line-height: 137px;
+    color: #444A4A;
+}
+
+.block_faceb{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    height: 124px;
+    position: relative;
+    top: 130px;
+    left: 635px;
+}
+.faceb1{
+    width: 32px;
+    height: 32px;
+}
+.Follow_us{
+    position: relative;
+    left: 490px;
+    top: 420px;
+
+    color: #444A4A;
+    transform: rotate(-90deg);
+}
+/* section */
+.section_inner{
+    max-width: 1142px;
+    min-height: 794px;
+}
+.section_inner_1{
+    display: flex;  
+    justify-content: space-between;
+}
+.section_inner_2{
+    display: flex;  
+    justify-content: space-between;
+    margin-top: 110px;
+}
+.Group{
+    width: 645px;
+    height: 290px;
+}
+#Group_52{
+    width: 236px;
+    height: 320px;
+}
+.section_titel{
+    margin-bottom: 25px;
+}
+
+h2{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 38px;
+}
+p{
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 36px;
+    color: #444A4A;
+    margin: 10px 0;
+}
+/* Cards */
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 1440px;
+    min-height: 550px;
+    background: #E3EBE7;
+    margin: 64px auto;
+}
+.cards_inner{
+    display: flex;
+    justify-content: space-between;
+    width: 1084px;
+    height: 458px;
+}
+
+.cards_inner1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+    width: 344px;
+    height: 458px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 23px 34px rgba(35, 57, 55, 0.17);
+    border-radius: 25px;
+}
+h3{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 25px ;
+}
+/* Footer */
+footer{
+    width: 100%;
+}
+#footer_container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 278px 153px 120px;
+    width: 1042px;
+    height: 372px;
+}
+#map_text{
+    margin-top: 34px;
+}
+
+h5{
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 36px;
+
+    text-align: center;
+}
+#strip{
+    display: block;
+    width: 102px;
+    height: 2px;
+    border: 1px solid #444A4A;
+    margin-top: 46px;
+}

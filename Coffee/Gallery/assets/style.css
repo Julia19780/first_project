@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #000000;
+    overflow: hidden;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header */
+.header{
+    font-family: 'Raleway', sans-serif;
+     background-color: #000000;
+    font-style: normal;
+    position: absolute;
+    min-height: 46px;
+    max-width: 1200px;
+    top: 24px;
+    left: 117px;
+    right: 120px;
+    z-index: 1000;
+}
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container_header{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Logo in header */
+#header_logo{
+    height: 35px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    width: 26%;
+}
+#logo_text{
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    font-style: normal;
+    font-size: 20px;
+}
+/* Nav */
+nav{
+    font-size: 16px;
+}
+.nav_link{
+    line-height: 16px;
+    text-decoration: none;
+    color: #ffffff;
+
+    margin: 0 30px;
+
+    transition: color .1s linear;
+}
+.nav_link:hover{
+    color:   #2D635E;
+    text-decoration: underline;
+}
+
+/* Photo */
+.container{
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+}
+.slide{
+    position: relative;
+    height: 80vh;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+    color: #ffffff;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 500ms ease-in-out;
+}
+.slide h3{
+    position: absolute;
+    font-size: 24px;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+.slide:active{
+    flex: 10;
+}
+.slide:active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+/* menu */
+.dropdown {
+float: left;
+overflow: hidden;
+}
+
+.dropdown .dropbtn {
+cursor: pointer;
+font-size: 16px;  
+border: none;
+outline: none;
+color: white;
+padding: 14px 16px;
+background-color: inherit;
+font-family: inherit;
+margin: 0;
+}
+
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+background-color: #2D635E;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+float: none;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color: #ddd;
+}
+
+.show {
+display: block;
+}
+
+#hide {
+    display: none;
+ }
+
